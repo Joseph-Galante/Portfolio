@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+// react router
+import { Route, Redirect } from 'react-router-dom';
+// pages
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to My Portfolio</h1> 
+      <Route exact path ="/" render={() => { return <Home /> }}/>
     </div>
   );
 }
