@@ -7,6 +7,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 // components
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
       <Route exact path ="/projects" render={() => { return <Projects /> }} />
 
       <Route exact path ="/contact" render={() => { return <Contact /> }} />
+
+      <Footer />
     </div>
   );
 }
