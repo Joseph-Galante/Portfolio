@@ -28,10 +28,12 @@ const Projects = () =>
                         <a className="to-git" href="https://github.com/Joseph-Galante/Demons-Respite" target="_blank" rel="noopener noreferrer">
                             <img className="to-git-dark" src="https://i.imgur.com/J73iQKo.png" alt="404" width={50} height={50}/>
                             <img className="to-git-light" src="https://i.imgur.com/7ihJ5Q7.png" alt="404" width={50} height={50}/>
+                            <p className="to-git-tip">View Repo</p>
                         </a>
                         <a className="to-app" href="https://joseph-galante.github.io/Demons-Respite/" target="_blank" rel="noopener noreferrer">
                             <img className="to-app-dark" src="https://i.imgur.com/JDWntEK.png" alt="404" width={50} height={50}/>
                             <img className="to-app-light" src="https://i.imgur.com/a4O1kq4.png" alt="404" width={50} height={50}/>
+                            <p className="to-app-tip">Launch App</p>
                         </a>
                     </span>
                 </section>
@@ -47,7 +49,21 @@ const Projects = () =>
                         <li>CSS</li>
                     </ul>
                 </section>
-                <a href="https://github.com/Joseph-Galante/U2_Project_Frontend" target="_blank" rel="noopener noreferrer">Minecraft Recipe API</a>
+                <section className="project-img">
+                    <img src="https://i.imgur.com/xQgYKtU.png" alt="404" width={300} height={150}/>
+                    <span className="img-options">
+                        <a className="to-git" href="https://github.com/Joseph-Galante/U2_Project_Frontend" target="_blank" rel="noopener noreferrer">
+                            <img className="to-git-dark" src="https://i.imgur.com/J73iQKo.png" alt="404" width={50} height={50}/>
+                            <img className="to-git-light" src="https://i.imgur.com/7ihJ5Q7.png" alt="404" width={50} height={50}/>
+                            <p className="to-git-tip">View Repo</p>
+                        </a>
+                        <a className="to-app" href="https://minecraft-recipe-finder.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                            <img className="to-app-dark" src="https://i.imgur.com/JDWntEK.png" alt="404" width={50} height={50}/>
+                            <img className="to-app-light" src="https://i.imgur.com/a4O1kq4.png" alt="404" width={50} height={50}/>
+                            <p className="to-app-tip">Launch App</p>
+                        </a>
+                    </span>
+                </section>
             </div>
             <div className="project">
                 <section className="project-details">
@@ -60,7 +76,21 @@ const Projects = () =>
                         <li>CSS</li>
                     </ul>
                 </section>
-                <a href="https://github.com/Joseph-Galante/WorkBear_App" target="_blank" rel="noopener noreferrer">WorkBear</a>
+                <section className="project-img">
+                    <img src="https://i.imgur.com/gLvgqpA.png" alt="404" width={300} height={150}/>
+                    <span className="img-options">
+                        <a className="to-git" href="https://github.com/Joseph-Galante/WorkBear_App" target="_blank" rel="noopener noreferrer">
+                            <img className="to-git-dark" src="https://i.imgur.com/J73iQKo.png" alt="404" width={50} height={50}/>
+                            <img className="to-git-light" src="https://i.imgur.com/7ihJ5Q7.png" alt="404" width={50} height={50}/>
+                            <p className="to-git-tip">View Repo</p>
+                        </a>
+                        <a className="to-app" href="https://serene-eyrie-38549.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                            <img className="to-app-dark" src="https://i.imgur.com/JDWntEK.png" alt="404" width={50} height={50}/>
+                            <img className="to-app-light" src="https://i.imgur.com/a4O1kq4.png" alt="404" width={50} height={50}/>
+                            <p className="to-app-tip">Launch App</p>
+                        </a>
+                    </span>
+                </section>
             </div>
             <div className="project">
                 <section className="project-details">
@@ -72,7 +102,21 @@ const Projects = () =>
                         <li>CSS</li>
                     </ul>
                 </section>
-                <a href="https://github.com/Joseph-Galante/Final_Project_Frontend" target="_blank" rel="noopener noreferrer">Anduin</a>
+                <section className="project-img">
+                    <img src="https://i.imgur.com/JiWLtVJ.png" alt="404" width={300} height={150}/>
+                    <span className="img-options">
+                        <a className="to-git" href="https://github.com/Joseph-Galante/Final_Project_Frontend" target="_blank" rel="noopener noreferrer">
+                            <img className="to-git-dark" src="https://i.imgur.com/J73iQKo.png" alt="404" width={50} height={50}/>
+                            <img className="to-git-light" src="https://i.imgur.com/7ihJ5Q7.png" alt="404" width={50} height={50}/>
+                            <p className="to-git-tip">View Repo</p>
+                        </a>
+                        <a className="to-app" href="https://anduin-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                            <img className="to-app-dark" src="https://i.imgur.com/JDWntEK.png" alt="404" width={50} height={50}/>
+                            <img className="to-app-light" src="https://i.imgur.com/a4O1kq4.png" alt="404" width={50} height={50}/>
+                            <p className="to-app-tip">Launch App</p>
+                        </a>
+                    </span>
+                </section>
             </div>
             
             <input type="button" value="Contact Me" onClick={() => {setRedirect('/contact')}} />
