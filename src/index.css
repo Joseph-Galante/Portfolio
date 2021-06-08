@@ -146,6 +146,48 @@ nav a:hover {
   align-items: flex-start;
   width: 60%;
 }
+.img-options {
+  position: absolute;
+  width: 240px;
+  height: 90px;
+  background-color: hsl(0, 0%, 95%);
+  display: none;
+  opacity: 0.9;
+  border-radius: 2%;
+}
+.project-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-img:hover img {
+  filter: brightness(50%);
+}
+.project-img:hover .img-options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.to-git:hover, .to-app:hover {
+  background-color: hsl(0, 0%, 10%);
+  border-radius: 10%;
+}
+.to-git-white, .to-app-white {
+  display: none;
+}
+.to-git:hover .to-git-white {
+  display: initial;
+}
+.to-git:hover .to-git-dark {
+  display: none;
+}
+.to-app:hover .to-app-white {
+  display: initial;
+}
+.to-app:hover .to-app-dark {
+  display: none;
+}
 
 /* ==================== CONTACT ==================== */
 
