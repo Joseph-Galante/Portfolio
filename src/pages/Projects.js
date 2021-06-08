@@ -11,7 +11,7 @@ const Projects = () =>
     return (
         <div className="project-page">
             {redirect !== '' ? <Redirect to={redirect} /> : null}
-            <h1>Solo Projects</h1>
+            <h1>Projects</h1>
             <div className="project">
                 <section className="project-details">
                     <h3>Demon's Respite</h3>
