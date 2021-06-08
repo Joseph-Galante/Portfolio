@@ -27,11 +27,11 @@ const Projects = () =>
                     <span className="img-options">
                         <a className="to-git" href="https://github.com/Joseph-Galante/Demons-Respite" target="_blank" rel="noopener noreferrer">
                             <img className="to-git-dark" src="https://i.imgur.com/J73iQKo.png" alt="404" width={50} height={50}/>
-                            <img className="to-git-white" src="https://i.imgur.com/7ihJ5Q7.png" alt="404" width={50} height={50}/>
+                            <img className="to-git-light" src="https://i.imgur.com/7ihJ5Q7.png" alt="404" width={50} height={50}/>
                         </a>
                         <a className="to-app" href="https://joseph-galante.github.io/Demons-Respite/" target="_blank" rel="noopener noreferrer">
                             <img className="to-app-dark" src="https://i.imgur.com/JDWntEK.png" alt="404" width={50} height={50}/>
-                            <img className="to-app-white" src="https://i.imgur.com/a4O1kq4.png" alt="404" width={50} height={50}/>
+                            <img className="to-app-light" src="https://i.imgur.com/a4O1kq4.png" alt="404" width={50} height={50}/>
                         </a>
                     </span>
                 </section>

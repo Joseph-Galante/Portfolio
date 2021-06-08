@@ -173,16 +173,16 @@ nav a:hover {
   background-color: hsl(0, 0%, 10%);
   border-radius: 10%;
 }
-.to-git-white, .to-app-white {
+.to-git-light, .to-app-light {
   display: none;
 }
-.to-git:hover .to-git-white {
+.to-git:hover .to-git-light {
   display: initial;
 }
 .to-git:hover .to-git-dark {
   display: none;
 }
-.to-app:hover .to-app-white {
+.to-app:hover .to-app-light {
   display: initial;
 }
 .to-app:hover .to-app-dark {
