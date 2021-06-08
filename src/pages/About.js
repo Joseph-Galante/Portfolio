@@ -40,46 +40,62 @@ const About = () =>
             <div className="about-skills">
                 <h1>Skills</h1>
                 <section className="skills-section">
-                    <div>
-                        <img src="https://i.imgur.com/VHAlBLi.png" alt="404" width={100} height={100} />
-                        <h4>JavaScript</h4>
-                    </div>
-                    <div>
-                        <img src="https://i.imgur.com/EjWsdtm.png" alt="404" width={100} height={100} />
-                        <h4>HTML</h4>
-                    </div>
-                    <div>
-                        <img src="https://i.imgur.com/FcyKdtR.png" alt="404" width={100} height={100} />
-                        <h4>CSS</h4>
-                    </div>
-                    <div>
-                        <img src="https://i.imgur.com/qULKlEp.png" alt="404" width={100} height={100} />
-                        <h4>Node</h4>
-                    </div>
-                    <div>
-                        <img src="https://i.imgur.com/cc5wEMI.png" alt="404" width={100} height={100} />
-                        <h4>React</h4>
-                    </div>
-                    <div>
-                        <img src="https://i.imgur.com/1jGPRhZ.png" alt="404" width={100} height={100} />
-                        <h4>PostgreSQL</h4>
-                    </div>
-                    <div>
-                        <img src="https://i.imgur.com/nVrc4yL.png" alt="404" width={100} height={100} />
-                        <h4>Python</h4>
-                    </div>
-                    <div>
-                        <img src="https://i.imgur.com/J73iQKo.png" alt="404" width={100} height={100} />
-                        <h4>Git</h4>
-                    </div>
-                    <div>
-                        <img src="https://i.imgur.com/Aanpe7t.png" alt="404" width={100} height={100} />
-                        <h4>Heroku</h4>
-                    </div>
-                    <div>
-                        <img src="https://i.imgur.com/qR9mhfj.png" alt="404" width={100} height={100} />
-                        <h4>C#</h4>
-                    </div>
+                    <section className="languages-section">
+                        <h2>Languages</h2>
+                        <section className="languages">
+                            <div>
+                                <img src="https://i.imgur.com/VHAlBLi.png" alt="404" width={100} height={100} />
+                                <h4>JavaScript</h4>
+                            </div>
+                            <div>
+                                <img src="https://i.imgur.com/EjWsdtm.png" alt="404" width={100} height={100} />
+                                <h4>HTML</h4>
+                            </div>
+                            <div>
+                                <img src="https://i.imgur.com/FcyKdtR.png" alt="404" width={100} height={100} />
+                                <h4>CSS</h4>
+                            </div>
+                            <div>
+                                <img src="https://i.imgur.com/1jGPRhZ.png" alt="404" width={100} height={100} />
+                                <h4>PostgreSQL</h4>
+                            </div>
+                            <div>
+                                <img src="https://i.imgur.com/nVrc4yL.png" alt="404" width={100} height={100} />
+                                <h4>Python</h4>
+                            </div>
+                            <div>
+                                <img src="https://i.imgur.com/qR9mhfj.png" alt="404" width={100} height={100} />
+                                <h4>C#</h4>
+                            </div>
+                        </section>
+                    </section>
+
+                    <section className="frameworks-section">
+                        <h2>Frameworks</h2>
+                        <section className="frameworks">
+                            <div>
+                                <img src="https://i.imgur.com/qULKlEp.png" alt="404" width={100} height={100} />
+                                <h4>Node</h4>
+                            </div>
+                            <div>
+                                <img src="https://i.imgur.com/cc5wEMI.png" alt="404" width={100} height={100} />
+                                <h4>React</h4>
+                            </div>
+                        </section>
+                    </section>
+                    <section className="production-section">
+                        <h2>Version Control / Production</h2>
+                        <section className="production">
+                            <div>
+                                <img src="https://i.imgur.com/J73iQKo.png" alt="404" width={100} height={100} />
+                                <h4>Git</h4>
+                            </div>
+                            <div>
+                                <img src="https://i.imgur.com/Aanpe7t.png" alt="404" width={100} height={100} />
+                                <h4>Heroku</h4>
+                            </div>
+                        </section>
+                    </section>
                 </section>
             </div>
 

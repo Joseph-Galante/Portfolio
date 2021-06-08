@@ -117,6 +117,16 @@ nav a:hover {
   margin: 10px 0 0 0;
 }
 
+.languages-section, .frameworks-section, .production-section {
+  color: hsl(0, 0%, 30%);
+}
+.languages, .frameworks, .production {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 /* ==================== PROJECTS ==================== */
 
 .project-page {
