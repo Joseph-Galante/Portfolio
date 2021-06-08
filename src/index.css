@@ -118,7 +118,7 @@ nav a:hover {
 }
 
 .languages-section, .frameworks-section, .production-section {
-  color: hsl(0, 0%, 30%);
+  /* color: hsl(0, 0%, 30%); */
 }
 .languages, .frameworks, .production {
   display: flex;
