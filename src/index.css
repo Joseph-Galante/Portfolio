@@ -66,24 +66,55 @@ nav a:hover {
 .about-page {
   background-color: hsl(255, 75%, 60%);
 }
-.about-section {
+
+.edu-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
-.about-section div {
-  border: 1px solid hsl(0, 100%, 100%);
+.edu-section div {
+  /* border: 2px solid hsl(0, 100%, 100%); */
   border-radius: 10%;
   width: 200px;
   height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
-.about-section p {
+.edu-section p {
   padding: 15px;
+}
+.edu-section img {
+  margin: 10px 0 0 0;
+}
+
+.about-skills {
+  background-color: hsl(0, 100%, 100%);
+  color: hsl(255, 75%, 60%);
+}
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skills-section div {
+  /* border: 2px solid hsl(0, 100%, 100%); */
+  border-radius: 10%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skills-section h4 {
+  padding: 15px;
+}
+.skills-section img {
+  margin: 10px 0 0 0;
 }
 
 /* ==================== PROJECTS ==================== */
