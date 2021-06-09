@@ -6,13 +6,10 @@ import reportWebVitals from './reportWebVitals';
 
 // router
 import { BrowserRouter } from 'react-router-dom';
-// scroll restore
-import ScrollToTop from './components/ScrollToTop';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ScrollToTop />
       <App />
     </BrowserRouter>
   </React.StrictMode>,
