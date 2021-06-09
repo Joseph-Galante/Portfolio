@@ -255,11 +255,37 @@ nav a:hover {
   display: flex;
   flex-direction: column;
 }
+.contact-links {
+  margin: 30px;
+}
+.contact-links a {
+  margin: 10px;
+}
 
 /* ==================== FOOTER ==================== */
 
 .footer {
-  border-top: 2px solid hsl(0, 0%, 30%);
+  color: hsl(255, 75%, 60%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
-
-/* ==================== FOOTER ==================== */
+.footer h4 {
+  text-decoration: underline;
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+.footer-projects a {
+  text-decoration: none;
+  color: hsl(255, 75%, 60%);
+}
+.footer-projects a:hover {
+  text-decoration: underline;
+  color: hsl(255, 75%, 30%);
+}
+.footer-links a {
+  margin: 5px;
+}
