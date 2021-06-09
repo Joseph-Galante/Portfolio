@@ -21,10 +21,21 @@ code {
 /* ==================== GENERAL INPUT ==================== */
 
 input[type="button"] {
-  /* border: 1px solid red; */
+  color:hsl(0, 0%, 100%);
+  background-color:hsl(255, 75%, 60%);
+  border: 2px solid hsl(0, 0%, 100%);
+  text-decoration: none;
+  padding: 7px 20px;
+  margin: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 input[type="button"]:hover {
   cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(255, 75%, 30%);
 }
 
 /* ==================== NAVBAR ==================== */
@@ -60,12 +71,25 @@ nav a:hover {
 
 .home-page {
   background-color: hsl(255, 75%, 60%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.home-pic {
+  margin: 50px;
+}
+.home-pic img {
+  border-radius: 50%;
 }
 
 /* ==================== ABOUT ==================== */
 
 .about-page {
   background-color: hsl(255, 75%, 60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .edu-section {
@@ -228,6 +252,8 @@ nav a:hover {
 
 .contact-page {
   background-color: hsl(255, 75%, 60%);
+  display: flex;
+  flex-direction: column;
 }
 
 /* ==================== FOOTER ==================== */
