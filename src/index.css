@@ -45,7 +45,7 @@ nav {
   position: sticky;
   top: 0px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 nav a {
@@ -55,8 +55,6 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 55%;
-  width: 10%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -65,10 +63,40 @@ nav a {
 nav a:hover {
   background-color: hsl(255, 75%, 30%);
 }
+.nav-left {
+  display: flex;
+  justify-content: flex-start;
+  width: 65%;
+  height: 100%;
+}
+#home-link {
+  background: none;
+}
+.nav-right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 35%;
+}
+.nav-right a {
+  width: 100px;
+  height: 30px;
+  margin: 0 20px;
+}
 
-@media screen and (max-width: 800px) {
-  nav a {
-    width: 20%;
+@media screen and (max-width: 950px) {
+  nav {
+    justify-content: space-evenly;
+  }
+  #home-link img {
+    width: 200px;
+  }
+  .nav-left {
+    width: 35%;
+  }
+  .nav-right {
+    width: 65%;
   }
 }
 
