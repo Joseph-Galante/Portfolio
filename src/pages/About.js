@@ -23,12 +23,12 @@ const About = () =>
                         <p>Found a real passion for coding in my first C++ course</p>
                     </div>
                     <div>
-                        <img src="https://i.imgur.com/Rd3ERXm.png" alt="404" width={60} height={60} />
-                        <p>Couldn't find a job in my studied field</p>
+                        <img src="https://i.imgur.com/4tQtrvD.png" alt="404" width={60} height={60} />
+                        <p>Started learning C# and OOP concepts with Unity</p>
                     </div>
                     <div>
                         <img src="https://i.imgur.com/BINtIFb.png" alt="404" width={60} height={60} />
-                        <p>Found a program to study to be a web developer</p>
+                        <p>Studied to be a full stack web developer in an immersive program</p>
                     </div>
                     <div>
                         <img src="https://i.imgur.com/GytgP7y.png" alt="404" width={60} height={60} />

@@ -9,7 +9,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: hsl(0, 100%, 100%);
-  /* font-family: fontttttt; */
   /* background-color: hsl(255, 75%, 60%); */
 }
 
@@ -67,6 +66,12 @@ nav a:hover {
   background-color: hsl(255, 75%, 30%);
 }
 
+@media screen and (max-width: 800px) {
+  nav a {
+    width: 20%;
+  }
+}
+
 /* ==================== HOME ==================== */
 
 .home-page {
@@ -75,6 +80,7 @@ nav a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 .home-pic {
   margin: 50px;
@@ -155,6 +161,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
 }
 .project {
   display: flex;
@@ -254,6 +261,7 @@ nav a:hover {
   background-color: hsl(255, 75%, 60%);
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 .contact-links {
   margin: 30px;
