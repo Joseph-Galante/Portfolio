@@ -49,19 +49,9 @@ nav {
   align-items: center;
 }
 nav a {
-  color: hsl(0, 0%, 100%);
-  text-decoration: none;
-  background-color: hsl(255, 75%, 60%);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-nav a:hover {
-  background-color: hsl(255, 75%, 30%);
 }
 .nav-left {
   display: flex;
@@ -78,11 +68,27 @@ nav a:hover {
   align-items: center;
   height: 100%;
   width: 35%;
+  margin: 0 2px;
 }
 .nav-right a {
-  width: 100px;
-  height: 30px;
-  margin: 0 20px;
+  color: hsl(255, 75%, 60%);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 100%;
+  margin: 0 -2px -2px 0;
+  border-left: 2px solid hsl(255, 75%, 60%);
+  border-right: 2px solid hsl(255, 75%, 60%);
+}
+.nav-right a:hover {
+  color: hsl(255, 75%, 30%);
+  border-color: hsl(255, 75%, 30%);
+  z-index: 1;
+}
+nav .nav-right a:hover {
+  border-color: hsl(255, 75%, 30%);
 }
 
 @media screen and (max-width: 950px) {
@@ -90,13 +96,13 @@ nav a:hover {
     justify-content: space-evenly;
   }
   #home-link img {
-    width: 200px;
+    height: 50%;
   }
   .nav-left {
-    width: 35%;
+    width: 40%;
   }
   .nav-right {
-    width: 65%;
+    width: 60%;
   }
 }
 
@@ -108,7 +114,6 @@ nav a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 10px;
 }
 .home-pic {
   margin: 50px;
@@ -189,7 +194,6 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
 }
 .project {
   display: flex;
@@ -285,7 +289,7 @@ nav a:hover {
 
 @media screen and (max-width: 1200px) {
   .project {
-    flex-direction: column;
+    flex-flow: column nowrap;
   }
   .project-details {
     display: flex;
@@ -301,7 +305,6 @@ nav a:hover {
   background-color: hsl(255, 75%, 60%);
   display: flex;
   flex-direction: column;
-  padding: 10px;
 }
 .contact-links {
   margin: 30px;
