@@ -1,5 +1,5 @@
 // react
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 // react router
 import { Route, useLocation } from 'react-router-dom';
 // pages
@@ -12,6 +12,9 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
 function App() {
+  // states
+  const [ mobile, setMobile ] = useState(false);
+
   // variables
   const { pathname } = useLocation();
 
@@ -20,9 +23,20 @@ function App() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  // functions
+  const checkScreenSize = () =>
+  {
+    // console.log(window.outerWidth);
+    if (window.outerWidth <= 800)
+    {
+      setMobile(true);
+    }
+  }
+  useEffect(checkScreenSize, []);
+
   return (
     <div className="App">
-      <NavBar />
+      <NavBar mobile={mobile} />
 
       <Route exact path ="/" render={() => { return <Home /> }} />
       
