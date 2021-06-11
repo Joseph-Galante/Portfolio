@@ -8,7 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: hsl(0, 100%, 100%);
+  color: hsl(0, 0%, 100%);
   /* background-color: hsl(255, 75%, 60%); */
 }
 
@@ -40,7 +40,7 @@ input[type="button"]:hover {
 /* ==================== NAVBAR ==================== */
 
 nav {
-  background-color: hsl(0, 100%, 100%);
+  background-color: hsl(0, 0%, 100%);
   height: 60px;
   position: sticky;
   top: 0px;
@@ -49,7 +49,7 @@ nav {
   align-items: center;
 }
 nav a {
-  color: hsl(0, 100%, 100%);
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
   background-color: hsl(255, 75%, 60%);
   display: flex;
@@ -105,7 +105,7 @@ nav a:hover {
   align-items: center;
 }
 .edu-section div {
-  /* border: 2px solid hsl(0, 100%, 100%); */
+  /* border: 2px solid hsl(0, 0%, 100%); */
   border-radius: 10%;
   width: 200px;
   height: 200px;
@@ -122,7 +122,7 @@ nav a:hover {
 }
 
 .about-skills {
-  background-color: hsl(0, 100%, 100%);
+  background-color: hsl(0, 0%, 100%);
   color: hsl(255, 75%, 60%);
 }
 .skills-section {
@@ -132,7 +132,7 @@ nav a:hover {
   align-items: center;
 }
 .skills-section div {
-  /* border: 2px solid hsl(0, 100%, 100%); */
+  /* border: 2px solid hsl(0, 0%, 100%); */
   border-radius: 10%;
   width: 200px;
   height: 200px;
@@ -166,7 +166,7 @@ nav a:hover {
 .project {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 70%;
   margin: 10px 0 0 0;
@@ -175,13 +175,13 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 60%;
+  width: 50%;
 }
 .img-options {
   position: absolute;
   width: 250px;
   height: 100px;
-  background-color: hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 100%);
   display: none;
   opacity: 0.9;
   border-radius: 2%;
@@ -253,6 +253,18 @@ nav a:hover {
 }
 .to-app:hover .to-app-dark {
   display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .project {
+    flex-direction: column;
+  }
+  .project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* ==================== CONTACT ==================== */
