@@ -7,7 +7,7 @@ const Contact = () =>
                 <p>Joseph Galante</p>
                 <p>jgalante00@gmail.com</p>
                 <p>845-764-1333</p>
-                <a className="resume" href="https://docs.google.com/document/d/1E4xPoJK8JwAFuKA0_E193EjTCwjX8gIJeutFw--BsKU" target="_blank" rel="noopener noreferrer">My Resume</a>
+                <a className="resume" href="https://drive.google.com/file/d/1IIZHofbIsXtCEUrTf5wnozq5L2VDJ4Y8/view" target="_blank" rel="noopener noreferrer">My Resume</a>
             </section>
 
             <section className="contact-links">

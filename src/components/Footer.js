@@ -17,7 +17,7 @@ const Footer = () =>
                 <h4>Contact Me</h4>
                 <span>jgalante00@gmail.com</span>
                 <span>845-764-1333</span>
-                <a className="resume" href="https://docs.google.com/document/d/1E4xPoJK8JwAFuKA0_E193EjTCwjX8gIJeutFw--BsKU" target="_blank" rel="noopener noreferrer">My Resume</a>
+                <a className="resume" href="https://drive.google.com/file/d/1IIZHofbIsXtCEUrTf5wnozq5L2VDJ4Y8/view" target="_blank" rel="noopener noreferrer">My Resume</a>
                 <section className="footer-links">
                     <a href="https://github.com/Joseph-Galante" target="_blank" rel="noopener noreferrer">
                         <img src="https://i.imgur.com/J73iQKo.png" alt="404" width={50} height={50} />
