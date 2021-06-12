@@ -61,7 +61,7 @@ nav a {
 }
 .nav-right {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
   height: 100%;
   width: 35%;
@@ -95,26 +95,62 @@ nav .nav-right a:hover {
   border-color: hsl(255, 75%, 30%);
 }
 
+#mobile-menu-light, #mobile-menu-dark {
+  display: none;
+}
+#mobile-menu-light {
+  display: initial;
+}
+.mobile-menu:hover #mobile-menu-dark {
+  display: initial;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 55%);
+  border-radius: 10%;
+}
+.mobile-menu:hover #mobile-menu-light {
+  display: none;
+}
+.active {
+  background-color: hsl(0, 0%, 55%);
+  border-radius: 10%;
+}
+.active #mobile-menu-dark {
+  display: initial;
+}
+.active #mobile-menu-light {
+  display: none;
+}
+.dropdown {
+  position: absolute;
+  right: 1px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown-item {
+  color: hsl(255, 75%, 60%);
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(255, 75%, 30%);
+  border-radius: 3%;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.dropdown-item:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(255, 75%, 30%);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 800px) {
-  nav {
-    justify-content: space-between;
-  }
   #home-link img {
     height: 50%;
-  }
-  .nav-right {
-    display: flex;
-    justify-content: flex-end;
-  }
-  #mobile-menu-dark {
-    display: none;
-  }
-  .mobile-menu:hover #mobile-menu-dark {
-    display: initial;
-    cursor: pointer;
-  }
-  .mobile-menu:hover #mobile-menu-light {
-    display: none;
   }
 }
 
@@ -324,6 +360,12 @@ nav .nav-right a:hover {
 .contact-links a {
   margin: 10px;
 }
+.contact-page .resume {
+  color: hsl(0, 0%, 100%);
+}
+.contact-page .resume:hover {
+  color: hsl(255, 75%, 30%);
+}
 
 /* ==================== FOOTER ==================== */
 
@@ -351,4 +393,12 @@ nav .nav-right a:hover {
 }
 .footer-links a {
   margin: 5px;
+}
+.footer .resume {
+  text-decoration: none;
+  color: hsl(255, 75%, 60%);
+}
+.footer .resume:hover {
+  text-decoration: underline;
+  color: hsl(255, 75%, 30%);
 }

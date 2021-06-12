@@ -1,5 +1,7 @@
 // react router
 import { Link } from 'react-router-dom';
+// components
+import MobileMenu from './MobileMenu';
 
 const NavBar = ({ mobile }) =>
 {
@@ -12,10 +14,7 @@ const NavBar = ({ mobile }) =>
             </div>
             {mobile ?
                 <div className="nav-right">
-                    <div className="mobile-menu">
-                        <img id="mobile-menu-light" src="https://i.imgur.com/g5FG73S.png" alt="404" width={50} height={50} />
-                        <img id="mobile-menu-dark" src="https://i.imgur.com/ejjsR1a.png" alt="404" width={50} height={50} />
-                    </div>
+                    <MobileMenu />
                 </div>
                 :
                 <div className="nav-right">
