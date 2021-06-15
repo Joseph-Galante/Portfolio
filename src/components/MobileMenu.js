@@ -18,14 +18,14 @@ const MobileMenu = () =>
         // grab mobile menu
         const mobileMenu = document.querySelector('#mobile-menu-dark');
         // if click was outside mobile menu
-        if (el != mobileMenu)
+        if (el !== mobileMenu)
         {
             // close dropdown
             setDropdown(false);
         }
         
         // check which dropdown item was clicked, if any
-        if (el.className == 'dropdown-item')
+        if (el.className === 'dropdown-item')
         {
             // go to selected item's page
             setRedirect(el.innerHTML.toLowerCase());

@@ -56,7 +56,7 @@ nav a {
 .nav-left {
   display: flex;
   justify-content: flex-start;
-  width: 65%;
+  width: 60%;
   height: 100%;
 }
 .nav-right {
@@ -64,7 +64,7 @@ nav a {
   justify-content: flex-end;
   align-items: center;
   height: 100%;
-  width: 35%;
+  width: 40%;
   margin: 0 2px;
 }
 .nav-right a {
@@ -95,6 +95,9 @@ nav .nav-right a:hover {
   border-color: hsl(255, 75%, 30%);
 }
 
+.nav-right-mobile {
+  display: none;
+}
 #mobile-menu-light, #mobile-menu-dark {
   display: none;
 }
@@ -152,6 +155,12 @@ nav .nav-right a:hover {
   #home-link img {
     height: 50%;
   }
+  .nav-right-mobile {
+    display: initial;
+  }
+  .nav-right {
+    display: none;
+  }
 }
 
 /* ==================== HOME ==================== */
@@ -162,6 +171,7 @@ nav .nav-right a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 0 5px;
 }
 .home-pic {
   margin: 50px;
