@@ -1,0 +1,21 @@
+@import "../../theme.module.scss";
+
+.navBar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: $spacing-s;
+  height: 100%;
+  width: 80px;
+  background-color: $color-neutral-200;
+}
+
+.navLink {
+  padding: $spacing-xxs;
+  @include typography-a2;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

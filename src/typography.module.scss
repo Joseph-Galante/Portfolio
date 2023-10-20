@@ -1,0 +1,49 @@
+@mixin typography-a1 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+@mixin typography-a2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+@mixin typography-p1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+@mixin typography-p2 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+@mixin typography-c1 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+
+@mixin typography-c2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}

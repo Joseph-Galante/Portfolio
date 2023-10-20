@@ -38,5 +38,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "7.21.0-placeholder-for-preset-env.2",
+    "react-error-overlay": "6.0.9",
+    "sass": "^1.69.4"
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
   }
 }

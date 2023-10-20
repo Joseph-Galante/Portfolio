@@ -1,0 +1,40 @@
+@import "../../theme.module.scss";
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 180px;
+  color: $color-primary-medium;
+  background-color: $color-neutral-white;
+}
+.footer h4 {
+  text-decoration: underline;
+}
+.footerContact {
+  display: flex;
+  flex-direction: column;
+}
+.footerProjects a {
+  text-decoration: none;
+  color: $color-primary-medium;
+}
+.footerProjects a:hover {
+  text-decoration: underline;
+  color: $color-primary-dark;
+}
+.footerLinks a {
+  margin: 5px;
+}
+.footer .resume {
+  text-decoration: none;
+  color: $color-primary-medium;
+}
+.footer .resume:hover {
+  text-decoration: underline;
+  color: $color-primary-dark;
+}

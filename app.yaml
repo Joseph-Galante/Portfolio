@@ -1,4 +1,2 @@
-runtime: nodejs
-runtime_config:
-  runtime_version: "16"
-env: flex
+runtime: nodejs16
+env: standard

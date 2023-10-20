@@ -2,8 +2,8 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,15 +13,15 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 /* ==================== GENERAL INPUT ==================== */
 
 input[type="button"] {
-  color:hsl(0, 0%, 100%);
-  background-color:hsl(255, 75%, 60%);
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(255, 75%, 60%);
   border: 2px solid hsl(0, 0%, 100%);
   text-decoration: none;
   padding: 7px 20px;
@@ -35,132 +35,6 @@ input[type="button"]:hover {
   cursor: pointer;
   color: hsl(0, 0%, 100%);
   background-color: hsl(255, 75%, 30%);
-}
-
-/* ==================== NAVBAR ==================== */
-
-nav {
-  background-color: hsl(0, 0%, 100%);
-  height: 60px;
-  position: sticky;
-  top: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav-left {
-  display: flex;
-  justify-content: flex-start;
-  width: 60%;
-  height: 100%;
-}
-.nav-right {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 100%;
-  width: 40%;
-  margin: 0 2px;
-}
-.nav-right a {
-  color: hsl(255, 75%, 60%);
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 33%;
-  height: 25%;
-  margin: 0 -2px -2px 0;
-  border-left: 2px solid hsl(255, 75%, 60%);
-  border-right: 2px solid hsl(255, 75%, 60%);
-}
-.nav-right a:first-child {
-  border-left: none;
-}
-.nav-right a:last-child {
-  border-right: none;
-  margin: 0 2px 0 0;
-}
-.nav-right a:hover {
-  color: hsl(255, 75%, 30%);
-  border-color: hsl(255, 75%, 30%);
-  z-index: 1;
-}
-nav .nav-right a:hover {
-  border-color: hsl(255, 75%, 30%);
-}
-
-.nav-right-mobile {
-  display: none;
-}
-#mobile-menu-light, #mobile-menu-dark {
-  display: none;
-}
-#mobile-menu-light {
-  display: initial;
-}
-.mobile-menu:hover #mobile-menu-dark {
-  display: initial;
-  cursor: pointer;
-  background-color: hsl(0, 0%, 55%);
-  border-radius: 10%;
-}
-.mobile-menu:hover #mobile-menu-light {
-  display: none;
-}
-.active {
-  background-color: hsl(0, 0%, 55%);
-  border-radius: 10%;
-}
-.active #mobile-menu-dark {
-  display: initial;
-}
-.active #mobile-menu-light {
-  display: none;
-}
-.dropdown {
-  position: absolute;
-  right: 1px;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.dropdown-item {
-  color: hsl(255, 75%, 60%);
-  background-color: hsl(0, 0%, 100%);
-  border: 1px solid hsl(255, 75%, 30%);
-  border-radius: 3%;
-  width: 100%;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 600;
-}
-.dropdown-item:hover {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(255, 75%, 30%);
-  cursor: pointer;
-}
-
-@media screen and (max-width: 800px) {
-  #home-link img {
-    height: 50%;
-  }
-  .nav-right-mobile {
-    display: initial;
-  }
-  .nav-right {
-    display: none;
-  }
 }
 
 /* ==================== HOME ==================== */
@@ -178,6 +52,9 @@ nav .nav-right a:hover {
 }
 .home-pic img {
   border-radius: 50%;
+}
+.summary {
+  max-width: 500px;
 }
 
 /* ==================== ABOUT ==================== */
@@ -238,7 +115,9 @@ nav .nav-right a:hover {
 .skills-section img {
   margin: 10px 0 0 0;
 }
-.languages, .frameworks, .production {
+.languages,
+.frameworks,
+.production {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -290,14 +169,17 @@ nav .nav-right a:hover {
   justify-content: space-evenly;
   align-items: center;
 }
-.to-git, .to-app {
+.to-git,
+.to-app {
   transition: 0.2s;
 }
-.to-git:hover, .to-app:hover {
+.to-git:hover,
+.to-app:hover {
   background-color: hsl(0, 0%, 10%);
   border-radius: 10%;
 }
-.to-git-light, .to-app-light {
+.to-git-light,
+.to-app-light {
   display: none;
 }
 .to-git-tip {
@@ -374,41 +256,5 @@ nav .nav-right a:hover {
   color: hsl(0, 0%, 100%);
 }
 .contact-page .resume:hover {
-  color: hsl(255, 75%, 30%);
-}
-
-/* ==================== FOOTER ==================== */
-
-.footer {
-  color: hsl(255, 75%, 60%);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-.footer h4 {
-  text-decoration: underline;
-}
-.footer-contact {
-  display: flex;
-  flex-direction: column;
-}
-.footer-projects a {
-  text-decoration: none;
-  color: hsl(255, 75%, 60%);
-}
-.footer-projects a:hover {
-  text-decoration: underline;
-  color: hsl(255, 75%, 30%);
-}
-.footer-links a {
-  margin: 5px;
-}
-.footer .resume {
-  text-decoration: none;
-  color: hsl(255, 75%, 60%);
-}
-.footer .resume:hover {
-  text-decoration: underline;
   color: hsl(255, 75%, 30%);
 }

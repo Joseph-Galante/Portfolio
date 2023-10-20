@@ -1,0 +1,26 @@
+.app {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.layout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  margin-left: 80px;
+  width: calc(100% - 80px);
+  height: 100%;
+  overflow: auto;
+
+  > div {
+    height: 100%;
+  }
+}
