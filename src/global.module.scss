@@ -1,0 +1,34 @@
+@import "./theme.module.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $color-neutral-white;
+  caret-color: transparent;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+input[type="button"] {
+  color: $color-neutral-white;
+  background-color: $color-primary-medium;
+  border: 2px solid $color-neutral-white;
+  text-decoration: none;
+  padding: 7px 20px;
+  margin: 30px;
+  border-radius: 30px;
+
+  &:hover {
+    cursor: pointer;
+    color: $color-neutral-white;
+    background-color: $color-primary-dark;
+  }
+}

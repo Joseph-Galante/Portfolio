@@ -271,7 +271,7 @@ const Projects = () => {
         </section>
       </div>
 
-      <p>
+      <p className="disclaimer">
         <strong>* - </strong>
         Indicates this project has been migrated from Heroku to GCP and due to
         incurring costs there is no database associated with it. The project is

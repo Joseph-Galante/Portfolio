@@ -1,21 +1,69 @@
 @import "../../theme.module.scss";
 
+$color-background: $color-neutral-black;
+
 .navBar {
   position: fixed;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: $spacing-s;
+  row-gap: $spacing-xs;
+
+  width: 92px;
   height: 100%;
-  width: 80px;
-  background-color: $color-neutral-200;
+  padding-top: $spacing-xs;
+
+  background-color: $color-background;
 }
 
+$color-inactive: $color-neutral-white;
+$color-hover: $color-primary-light;
+$color-active: $color-primary-medium;
+
 .navLink {
-  padding: $spacing-xxs;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: $spacing-xxxs;
+
+  width: 68px;
+  height: 68px;
+
+  color: $color-inactive;
+  border-radius: 4px;
+
   @include typography-a2;
 
+  > svg {
+    width: 40px;
+    height: 40px;
+
+    > path {
+      fill: $color-inactive;
+    }
+  }
+
   &:hover {
-    text-decoration: underline;
+    color: $color-hover;
+    background-color: $color-neutral-700;
+
+    & path {
+      fill: $color-hover;
+    }
+  }
+
+  &.active {
+    color: $color-active;
+
+    & path {
+      fill: $color-active;
+    }
+
+    &:hover {
+      cursor: default;
+      background-color: $color-background;
+    }
   }
 }
