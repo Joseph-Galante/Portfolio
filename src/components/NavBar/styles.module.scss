@@ -1,6 +1,7 @@
 @import "../../theme.module.scss";
 
 $color-background: $color-neutral-black;
+$width-nav-bar: 92px;
 
 .navBar {
   position: fixed;
@@ -10,7 +11,7 @@ $color-background: $color-neutral-black;
   align-items: center;
   row-gap: $spacing-xs;
 
-  width: 92px;
+  width: $width-nav-bar;
   height: 100%;
   padding-top: $spacing-xs;
 
@@ -28,8 +29,8 @@ $color-active: $color-primary-medium;
   align-items: center;
   row-gap: $spacing-xxxs;
 
-  width: 68px;
-  height: 68px;
+  width: calc($width-nav-bar - $spacing-xs * 2);
+  height: calc($width-nav-bar - $spacing-xs * 2);
 
   color: $color-inactive;
   border-radius: 4px;
