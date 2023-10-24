@@ -1,0 +1,33 @@
+@import "../../theme.module.scss";
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $color-primary-medium;
+}
+
+.pic {
+  margin: $spacing-xl;
+
+  & img {
+    border-radius: 50%;
+  }
+}
+
+.details {
+  > h1 {
+    @include typography-h1;
+  }
+
+  > h2 {
+    @include typography-h2;
+  }
+}
+
+.summary {
+  max-width: 500px;
+  @include typography-p2;
+}

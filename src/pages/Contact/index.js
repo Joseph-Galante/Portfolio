@@ -1,14 +1,15 @@
 import { RESUME_URL } from "../../shared/constants";
+import styles from "./styles.module.scss";
 
 const Contact = () => (
-  <div className="contact-page">
+  <div className={styles.page}>
     <h1>Contact Info</h1>
-    <section className="contact-info">
+    <section className={styles.info}>
       <p>Joseph Galante</p>
       <p>jgalante00@gmail.com</p>
       <p>845-764-1333</p>
       <a
-        className="resume"
+        className={styles.resume}
         href={RESUME_URL}
         target="_blank"
         rel="noopener noreferrer"
@@ -17,7 +18,7 @@ const Contact = () => (
       </a>
     </section>
 
-    <section className="contact-links">
+    <section className={styles.links}>
       <a
         href="https://github.com/Joseph-Galante"
         target="_blank"

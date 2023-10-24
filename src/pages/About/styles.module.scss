@@ -1,0 +1,93 @@
+@import "../../theme.module.scss";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $color-primary-medium;
+
+  & h1 {
+    @include typography-c1;
+  }
+}
+
+.eduSection {
+  width: 100%;
+}
+
+.edu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: $spacing-xxs;
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 200px;
+    height: 200px;
+    // border: 2px solid $color-neutral-white;
+    // border-radius: 4px;
+  }
+
+  & p {
+    padding: $spacing-s;
+  }
+
+  & img {
+    margin-top: $spacing-xs;
+  }
+}
+
+.skillsSection {
+  width: 100%;
+
+  color: $color-primary-medium;
+  background-color: $color-neutral-white;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 200px;
+    height: 200px;
+    // border: 2px solid $color-neutral-white;
+    // border-radius: 4px;
+  }
+
+  & h2 {
+    @include typography-c2;
+  }
+
+  & h4 {
+    padding: $spacing-s;
+    @include typography-a1;
+  }
+
+  & img {
+    margin-top: $spacing-xs;
+  }
+}
+
+.languages,
+.frameworks,
+.production {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}

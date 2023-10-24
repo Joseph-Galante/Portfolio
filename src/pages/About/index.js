@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { Redirect } from "react-router-dom";
+import styles from "./styles.module.scss";
 
 const About = () => {
   const [redirect, setRedirect] = useState("");
 
   return (
-    <div className="about-page">
+    <div className={styles.page}>
       {redirect !== "" ? <Redirect to={redirect} /> : null}
-      <div className="about-edu">
+      <div className={styles.eduSection}>
         <h1>Education</h1>
-        <section className="edu-section">
+        <section className={styles.edu}>
           <div>
             <img
               src="https://i.imgur.com/V2ULHIu.png"
@@ -60,12 +61,12 @@ const About = () => {
         </section>
       </div>
 
-      <div className="about-skills">
+      <div className={styles.skillsSection}>
         <h1>Skills</h1>
-        <section className="skills-section">
-          <section className="languages-section">
+        <section className={styles.skills}>
+          <section className={styles.languagesSection}>
             <h2>Languages</h2>
-            <section className="languages">
+            <section className={styles.languages}>
               <div>
                 <img
                   src="https://i.imgur.com/VHAlBLi.png"
@@ -123,9 +124,9 @@ const About = () => {
             </section>
           </section>
 
-          <section className="frameworks-section">
+          <section className={styles.frameworksSection}>
             <h2>Frameworks</h2>
-            <section className="frameworks">
+            <section className={styles.frameworks}>
               <div>
                 <img
                   src="https://i.imgur.com/qULKlEp.png"
@@ -146,9 +147,9 @@ const About = () => {
               </div>
             </section>
           </section>
-          <section className="production-section">
+          <section className={styles.productionSection}>
             <h2>Version Control / Production</h2>
-            <section className="production">
+            <section className={styles.production}>
               <div>
                 <img
                   src="https://i.imgur.com/J73iQKo.png"

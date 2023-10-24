@@ -1,19 +1,20 @@
 import { useState } from "react";
 import { Redirect } from "react-router-dom";
+import styles from "./styles.module.scss";
 
 const Home = () => {
   const [redirect, setRedirect] = useState("");
 
   return (
-    <div className="home-page">
+    <div className={styles.page}>
       {redirect !== "" ? <Redirect to={redirect} /> : null}
-      <section className="home-pic">
+      <section className={styles.pic}>
         <img src="https://i.imgur.com/d8OmLjW.jpg" alt="404" />
       </section>
-      <section className="home-details">
-        <h1 style={{ fontSize: "36px" }}>Joe Galante</h1>
-        <h3>Electrical Engineer turned Software Developer</h3>
-        <p className="summary">
+      <section className={styles.details}>
+        <h1>Joe Galante</h1>
+        <h2>Electrical Engineer turned Software Developer</h2>
+        <p className={styles.summary}>
           " A curious tinkerer who works logically and efficiently, while
           maintaining a positive attitude. I enjoy taking on more challenging
           tasks in an effort to learn and sharpen my skills as quickly as

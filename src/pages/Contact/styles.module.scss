@@ -1,0 +1,24 @@
+@import "../../theme.module.scss";
+
+.page {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $color-primary-medium;
+
+  & .resume {
+    color: $color-neutral-white;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+}
+
+.links {
+  margin: $spacing-l;
+
+  & a {
+    margin: $spacing-xs;
+  }
+}
