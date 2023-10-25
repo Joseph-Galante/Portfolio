@@ -10,6 +10,10 @@
   & h1 {
     @include typography-c1;
   }
+
+  & p {
+    @include typography-p2;
+  }
 }
 
 .eduSection {
@@ -45,7 +49,7 @@
 }
 
 .skillsSection {
-  width: 100%;
+  width: calc(100% + $spacing-m * 2);
 
   color: $color-primary-medium;
   background-color: $color-neutral-white;

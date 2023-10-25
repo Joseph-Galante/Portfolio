@@ -275,7 +275,7 @@ const Projects = () => {
       <p className={styles.disclaimer}>
         <strong>* - </strong>
         Indicates this project has been migrated from Heroku to GCP and due to
-        incurring costs there is no database associated with it. The project is
+        incurring costs there is no live application for it. The project is
         considered deprecated and will most likely never be supported again.
         Please take a look at the project's source code, if you're interested.
       </p>

@@ -3,38 +3,77 @@
 .footer {
   position: sticky;
   bottom: 0;
-  z-index: 10;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: flex-start;
-  height: 180px;
+  align-items: center;
+
+  width: 100%;
+  min-height: 100px;
+  height: 100px;
+
+  z-index: 10;
   color: $color-primary-medium;
   background-color: $color-neutral-white;
+
+  > section {
+    width: 100%;
+    height: 100%;
+  }
+
+  & h4 {
+    text-decoration: underline;
+  }
+
+  & .resume {
+    color: $color-primary-medium;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary-dark;
+      text-decoration: underline;
+    }
+  }
 }
-.footer h4 {
-  text-decoration: underline;
+
+.projectsSection {
+  & a {
+    color: $color-primary-medium;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary-dark;
+      text-decoration: underline;
+    }
+  }
 }
-.footerContact {
+
+.contactSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contactInfo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: $spacing-xxxs;
+
+  @include typography-p2;
+
+  & .resume {
+    @include typography-p1;
+  }
 }
-.footerProjects a {
-  text-decoration: none;
-  color: $color-primary-medium;
-}
-.footerProjects a:hover {
-  text-decoration: underline;
-  color: $color-primary-dark;
-}
-.footerLinks a {
-  margin: 5px;
-}
-.footer .resume {
-  text-decoration: none;
-  color: $color-primary-medium;
-}
-.footer .resume:hover {
-  text-decoration: underline;
-  color: $color-primary-dark;
+
+.contactLinks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: $spacing-xxxs;
+
+  padding-top: $spacing-xxxs;
 }

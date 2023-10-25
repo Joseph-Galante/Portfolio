@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 
 const Footer = () => (
   <div className={styles.footer}>
-    <section className={styles.footerProjects}>
+    {/* <section className={styles.projectsSection}>
       <h4>My Projects</h4>
       <a
         href="https://github.com/Joseph-Galante/Demons-Respite"
@@ -37,21 +37,22 @@ const Footer = () => (
       >
         Anduin
       </a>
-    </section>
+    </section> */}
 
-    <section className={styles.footerContact}>
-      <h4>Contact Me</h4>
-      <span>jgalante00@gmail.com</span>
-      <span>845-764-1333</span>
-      <a
-        className={styles.resume}
-        href={RESUME_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        My Resume
-      </a>
-      <section className={styles.footerLinks}>
+    <section className={styles.contactSection}>
+      <div className={styles.contactInfo}>
+        <span>jgalante00@gmail.com</span>
+        <span>845-764-1333</span>
+        <a
+          className={styles.resume}
+          href={RESUME_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          My Resume
+        </a>
+      </div>
+      <section className={styles.contactLinks}>
         <a
           href="https://github.com/Joseph-Galante"
           target="_blank"

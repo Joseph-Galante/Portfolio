@@ -148,7 +148,7 @@ const About = () => {
             </section>
           </section>
           <section className={styles.productionSection}>
-            <h2>Version Control / Production</h2>
+            <h2>Version Control</h2>
             <section className={styles.production}>
               <div>
                 <img
