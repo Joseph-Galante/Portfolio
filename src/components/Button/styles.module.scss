@@ -1,0 +1,20 @@
+@import "../../theme.module.scss";
+
+.button {
+  padding: $spacing-xxs $spacing-m;
+
+  color: $color-primary-medium;
+  background-color: $color-neutral-900;
+  border: 2px solid $color-primary-medium;
+  border-radius: 4px;
+
+  text-decoration: none;
+  @include typography-a2;
+
+  &:hover {
+    cursor: pointer;
+    color: $color-neutral-white;
+    background-color: $color-primary-dark;
+    border-color: $color-primary-dark;
+  }
+}

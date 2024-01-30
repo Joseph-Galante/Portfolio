@@ -1,5 +1,5 @@
 import React from "react";
-import { RESUME_URL } from "../../shared/constants";
+import { GITHUB_URL, LINKEDIN_URL, RESUME_URL } from "../../shared/constants";
 import styles from "./styles.module.scss";
 
 const Footer = () => (
@@ -43,39 +43,16 @@ const Footer = () => (
       <div className={styles.contactInfo}>
         <span>jgalante00@gmail.com</span>
         <span>845-764-1333</span>
-        <a
-          className={styles.resume}
-          href={RESUME_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          My Resume
-        </a>
       </div>
       <section className={styles.contactLinks}>
-        <a
-          href="https://github.com/Joseph-Galante"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://i.imgur.com/J73iQKo.png"
-            alt="404"
-            width={50}
-            height={50}
-          />
+        <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
+          Resume
         </a>
-        <a
-          href="https://www.linkedin.com/in/joseph-galante-950426195/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://i.imgur.com/qpvxWlK.png"
-            alt="404"
-            width={50}
-            height={50}
-          />
+        <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
+          LinkedIn
         </a>
       </section>
     </section>

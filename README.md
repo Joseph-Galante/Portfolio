@@ -1,5 +1,9 @@
 # Portfolio
 
+## Deployed Link
+
+https://joe-galante.com/
+
 ## Overview
 
-A React app containing a summary of me and my work from coming up as a web developer.
+A React app containing a summary of me and my work as a web developer.

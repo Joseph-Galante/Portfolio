@@ -5,3 +5,7 @@ $spacing-s: 16px;
 $spacing-m: 24px;
 $spacing-l: 32px;
 $spacing-xl: 40px;
+
+@mixin padding-s-m {
+  padding: $spacing-s $spacing-m;
+}

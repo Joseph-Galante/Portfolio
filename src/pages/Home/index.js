@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Redirect } from "react-router-dom";
+import Button from "../../components/Button";
 import styles from "./styles.module.scss";
 
 const Home = () => {
@@ -23,9 +24,8 @@ const Home = () => {
           passionate about working effectively with others while using standard
           practices to ensure I am always providing clear and concise code. "
         </p>
-        <input
-          type="button"
-          value="Read More About Me"
+        <Button
+          text="Read More About Me"
           onClick={() => {
             setRedirect("/about");
           }}

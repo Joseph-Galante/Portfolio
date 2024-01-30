@@ -1,7 +1,7 @@
-import HomeIcon from "../icons/Home";
-import AboutIcon from "../icons/About";
-import ProjectsIcon from "../icons/Projects";
-import ContactIcon from "../icons/Contact";
+import HomeIcon from "../Icon/Home";
+import AboutIcon from "../Icon/About";
+import ProjectsIcon from "../Icon/Projects";
+import ContactIcon from "../Icon/Contact";
 
 export const PAGES = [
   {
