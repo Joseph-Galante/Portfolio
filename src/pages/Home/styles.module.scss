@@ -3,33 +3,75 @@
 .page {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
-
-  background-color: $color-primary-medium;
-}
-
-.pic {
-  margin: $spacing-xl;
-
-  & img {
-    border-radius: 50%;
-  }
 }
 
 .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  text-align: start;
+
   > h1 {
+    margin: auto 0;
+
     @include typography-h1;
+
+    &:nth-child(2) {
+      color: $color-primary-medium;
+    }
   }
 
+  > span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.journey {
+  column-gap: $spacing-xxs;
+
+  margin-top: $spacing-s;
+
   > h2 {
+    margin: 0;
+
     @include typography-h2;
+
+    &:nth-child(1) {
+      color: $color-secondary-yellow;
+    }
+
+    &:nth-child(3) {
+      color: $color-secondary-green;
+    }
   }
 }
 
 .summary {
-  margin-bottom: $spacing-m;
+  column-gap: $spacing-xxxs;
 
-  max-width: 500px;
+  margin-top: $spacing-m;
+  margin-bottom: $spacing-xl;
+
+  word-wrap: normal;
   @include typography-p2;
+
+  > p {
+    margin: 0;
+
+    &.highlighted {
+      color: $color-tertiary-blue;
+    }
+  }
+}
+
+.pic {
+  & img {
+    border-radius: 50%;
+  }
 }

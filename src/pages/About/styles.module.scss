@@ -7,10 +7,6 @@
 
   background-color: $color-primary-medium;
 
-  & h1 {
-    @include typography-c1;
-  }
-
   & p {
     @include typography-p2;
   }

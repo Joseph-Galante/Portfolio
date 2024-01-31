@@ -1,4 +1,5 @@
 import React from "react";
+import Box from "@mui/material/Box";
 import { GITHUB_URL, LINKEDIN_URL, RESUME_URL } from "../../shared/constants";
 import styles from "./styles.module.scss";
 
@@ -42,15 +43,18 @@ const Footer = () => (
     <section className={styles.contactSection}>
       <div className={styles.contactInfo}>
         <span>jgalante00@gmail.com</span>
+        <Box className={styles.divider} />
         <span>845-764-1333</span>
       </div>
       <section className={styles.contactLinks}>
         <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
           Resume
         </a>
+        <Box className={styles.divider} />
         <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
+        <Box className={styles.divider} />
         <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>
