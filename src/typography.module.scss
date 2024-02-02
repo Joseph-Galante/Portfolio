@@ -8,6 +8,15 @@
 }
 
 @mixin typography-a2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+@mixin typography-a3 {
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
@@ -19,7 +28,7 @@
 @mixin typography-h1 {
   font-size: 108px;
   font-weight: 800;
-  line-height: 108px;
+  line-height: 100px;
   letter-spacing: normal;
   text-transform: capitalize;
   text-decoration: none;

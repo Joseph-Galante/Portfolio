@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Redirect } from "react-router-dom";
+import Page from "../../components/Page";
 import Button from "../../components/Button";
 import styles from "./styles.module.scss";
 
@@ -7,7 +8,7 @@ const About = () => {
   const [redirect, setRedirect] = useState("");
 
   return (
-    <div className={styles.page}>
+    <Page>
       {redirect !== "" ? <Redirect to={redirect} /> : null}
       <div className={styles.skillsSection}>
         <h1>Skills</h1>
@@ -67,8 +68,9 @@ const About = () => {
         onClick={() => {
           setRedirect("/projects");
         }}
+        extraClassnames={styles.toProjects}
       />
-    </div>
+    </Page>
   );
 };
 
