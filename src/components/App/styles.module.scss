@@ -22,11 +22,4 @@
   width: calc(100% - 92px);
   height: 100%;
   margin-left: 92px;
-
-  > div {
-    padding: $spacing-s $spacing-m;
-
-    height: 100%;
-    overflow: auto;
-  }
 }

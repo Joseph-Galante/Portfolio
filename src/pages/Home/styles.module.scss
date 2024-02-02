@@ -1,7 +1,7 @@
 @import "../../theme.module.scss";
 
 .home {
-  justify-content: center;
+  justify-content: center !important;
 }
 
 .details {
@@ -30,11 +30,17 @@
 }
 
 .greeting {
-  color: $color-secondary-green;
+  margin-bottom: $spacing-m;
+
+  color: $color-secondary-green-medium;
 
   @include typography-h2;
   text-transform: none;
   font-style: italic;
+}
+
+.introduction {
+  color: $color-neutral-100;
 }
 
 .journey {
@@ -49,11 +55,11 @@
     font-size: 24px;
 
     &:nth-child(1) {
-      color: $color-secondary-yellow;
+      color: $color-secondary-yellow-medium;
     }
 
     &:nth-child(3) {
-      color: $color-secondary-green;
+      color: $color-secondary-green-medium;
     }
   }
 }

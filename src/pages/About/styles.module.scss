@@ -1,44 +1,5 @@
 @import "../../theme.module.scss";
 
-.skillsSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  row-gap: $spacing-m;
-}
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-
-  > section {
-    text-align: start;
-  }
-
-  & h2 {
-    width: auto;
-    @include typography-c2;
-  }
-
-  & h4 {
-    padding: $spacing-s;
-    @include typography-a1;
-  }
-}
-
-.languages,
-.frameworks,
-.production {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.toProjects {
-  margin-top: $spacing-m;
+.scene {
+  color: $color-secondary-yellow-medium;
 }

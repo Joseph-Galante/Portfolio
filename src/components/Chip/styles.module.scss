@@ -1,0 +1,26 @@
+@import "../../theme.module.scss";
+
+$color-chip-primary: $color-primary-medium;
+$color-chip-secondary: $color-secondary-green-medium;
+$color-chip-tertiary: $color-tertiary-blue;
+
+.chip {
+  @include typography-a2;
+  font-family: "Source Code Pro", monospace !important;
+  font-size: 20px !important;
+}
+
+.primary {
+  color: $color-chip-primary !important;
+  border: 2px solid $color-chip-primary !important;
+}
+
+.secondary {
+  color: $color-chip-secondary !important;
+  border: 2px solid $color-chip-secondary !important;
+}
+
+.tertiary {
+  color: $color-chip-tertiary !important;
+  border: 2px solid $color-chip-tertiary !important;
+}

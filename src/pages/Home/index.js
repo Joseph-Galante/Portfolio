@@ -14,7 +14,7 @@ const Home = () => {
       {redirect !== "" ? <Redirect to={redirect} /> : null}
       <section className={styles.details}>
         <h2 className={styles.greeting}>{"> start greeting.exe"}</h2>
-        <h1>Hello! I'm</h1>
+        <h1 className={styles.introduction}>Hello! I'm</h1>
         <h1 className={styles.name}>Joe Galante</h1>
         <span className={styles.journey}>
           <h2>Electrical Engineer</h2>

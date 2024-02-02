@@ -14,5 +14,12 @@ body {
 }
 
 h1 {
+  margin: 0;
+
+  color: $color-primary-dark;
   @include typography-c1;
+}
+
+h2 {
+  margin: 0;
 }

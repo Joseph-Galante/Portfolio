@@ -12,20 +12,22 @@ const Projects = () => {
   const [redirect, setRedirect] = useState("");
 
   return (
-    <Page>
+    <Page
+      heading={<h1>Projects</h1>}
+      controls={
+        <Button
+          text="Contact Me"
+          onClick={() => {
+            setRedirect("/contact");
+          }}
+        />
+      }
+    >
       {redirect !== "" ? <Redirect to={redirect} /> : null}
-      <h1>Projects</h1>
+
       {PROJECTS.map((project) => (
         <Project {...project} />
       ))}
-
-      <Button
-        text="Contact Me"
-        onClick={() => {
-          setRedirect("/contact");
-        }}
-        extraClassnames={styles.toContact}
-      />
     </Page>
   );
 };

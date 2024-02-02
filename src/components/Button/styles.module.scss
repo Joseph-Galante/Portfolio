@@ -3,6 +3,7 @@
 .button {
   padding: $spacing-xxs $spacing-m;
   border-radius: 4px;
+  box-sizing: border-box;
   @include typography-a3;
 
   &:hover {
@@ -32,9 +33,9 @@ $color-button-filled-active: $color-primary-light;
   }
 }
 
-$color-button-outlined-idle: $color-secondary-green;
-$color-button-outlined-hover: $color-secondary-green;
-$color-button-outlined-active: $color-secondary-green;
+$color-button-outlined-idle: $color-secondary-green-medium;
+$color-button-outlined-hover: $color-secondary-green-dark;
+$color-button-outlined-active: $color-secondary-green-light;
 
 .outlined {
   color: $color-button-outlined-idle;

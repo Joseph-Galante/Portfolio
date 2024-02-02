@@ -3,8 +3,7 @@ import { RESUME_URL, GITHUB_URL, LINKEDIN_URL } from "../../shared/constants";
 import styles from "./styles.module.scss";
 
 const Contact = () => (
-  <Page>
-    <h1>Contact Info</h1>
+  <Page heading={<h1>Contact Info</h1>}>
     <section className={styles.info}>
       <p>Joseph Galante</p>
       <p>jgalante00@gmail.com</p>

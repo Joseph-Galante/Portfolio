@@ -1,6 +1,7 @@
 @import "../../theme.module.scss";
 
 .info {
+  color: $color-secondary-green-light;
   text-align: start;
 }
 
@@ -16,10 +17,10 @@
     width: auto;
     max-width: fit-content;
 
-    color: $color-neutral-100;
+    color: $color-secondary-yellow-medium;
 
     &:hover {
-      color: $color-primary-medium;
+      color: $color-tertiary-blue;
     }
   }
 }

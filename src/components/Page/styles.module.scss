@@ -1,11 +1,15 @@
 @import "../../theme.module.scss";
 
 .page {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  height: 100%;
+  @include padding-m-l;
+  overflow: auto;
 
   background-color: $color-primary-deep;
+}
+
+.heading {
+  padding-bottom: calc($spacing-m - 2px);
+
+  border-bottom: 2px solid $color-secondary-yellow-medium;
 }
