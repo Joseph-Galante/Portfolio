@@ -1,8 +1,9 @@
+import Page from "../../components/Page";
 import { RESUME_URL, GITHUB_URL, LINKEDIN_URL } from "../../shared/constants";
 import styles from "./styles.module.scss";
 
 const Contact = () => (
-  <div className={styles.page}>
+  <Page>
     <h1>Contact Info</h1>
     <section className={styles.info}>
       <p>Joseph Galante</p>
@@ -21,7 +22,7 @@ const Contact = () => (
         </a>
       </section>
     </section>
-  </div>
+  </Page>
 );
 
 export default Contact;

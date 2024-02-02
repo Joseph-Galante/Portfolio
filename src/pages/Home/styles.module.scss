@@ -1,10 +1,7 @@
 @import "../../theme.module.scss";
 
-.page {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+.home {
+  justify-content: center;
 }
 
 .details {
@@ -15,14 +12,10 @@
 
   text-align: start;
 
-  > h1 {
+  & h1 {
     margin: auto 0;
 
     @include typography-h1;
-
-    &:nth-child(2) {
-      color: $color-primary-medium;
-    }
   }
 
   > span {
@@ -30,6 +23,18 @@
     justify-content: flex-start;
     align-items: center;
   }
+}
+
+.name {
+  color: $color-primary-dark;
+}
+
+.greeting {
+  color: $color-secondary-green;
+
+  @include typography-h2;
+  text-transform: none;
+  font-style: italic;
 }
 
 .journey {
@@ -41,6 +46,7 @@
     margin: 0;
 
     @include typography-h2;
+    font-size: 24px;
 
     &:nth-child(1) {
       color: $color-secondary-yellow;
@@ -59,7 +65,7 @@
   margin-bottom: $spacing-xl;
 
   word-wrap: normal;
-  @include typography-p2;
+  @include typography-a2;
 
   > p {
     margin: 0;

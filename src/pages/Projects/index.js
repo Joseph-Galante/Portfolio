@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Redirect } from "react-router-dom";
 
+import Page from "../../components/Page";
 import Project from "../../components/Project";
 import Button from "../../components/Button";
 import { PROJECTS } from "./constants";
@@ -11,7 +12,7 @@ const Projects = () => {
   const [redirect, setRedirect] = useState("");
 
   return (
-    <div className={styles.page}>
+    <Page>
       {redirect !== "" ? <Redirect to={redirect} /> : null}
       <h1>Projects</h1>
       {PROJECTS.map((project) => (
@@ -23,8 +24,9 @@ const Projects = () => {
         onClick={() => {
           setRedirect("/contact");
         }}
+        extraClassnames={styles.toContact}
       />
-    </div>
+    </Page>
   );
 };
 

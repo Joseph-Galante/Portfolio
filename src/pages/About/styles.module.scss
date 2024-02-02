@@ -1,21 +1,5 @@
 @import "../../theme.module.scss";
 
-.page {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  background-color: $color-primary-medium;
-
-  & p {
-    @include typography-p2;
-  }
-
-  > :last-child {
-    margin-top: $spacing-m;
-  }
-}
-
 .skillsSection {
   display: flex;
   flex-direction: column;
@@ -53,4 +37,8 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+}
+
+.toProjects {
+  margin-top: $spacing-m;
 }
