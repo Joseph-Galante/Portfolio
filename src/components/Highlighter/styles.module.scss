@@ -1,0 +1,14 @@
+@import "../../theme.module.scss";
+
+.highlighter {
+  word-wrap: normal;
+  @include typography-a2;
+
+  > span {
+    margin: 0;
+
+    &.highlighted {
+      color: $color-tertiary-blue;
+    }
+  }
+}

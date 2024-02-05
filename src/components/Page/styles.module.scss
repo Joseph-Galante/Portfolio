@@ -10,6 +10,7 @@
 
 .heading {
   padding-bottom: calc($spacing-m - 2px);
+  margin-bottom: $spacing-l;
 
   border-bottom: 2px solid $color-secondary-yellow-medium;
 }

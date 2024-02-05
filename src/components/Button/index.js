@@ -1,5 +1,6 @@
 import React from "react";
 import classNames from "classnames";
+import { VARIANT_STYLES } from "./constants";
 import styles from "./styles.module.scss";
 
 type Props = {
@@ -14,23 +15,17 @@ const Button = ({
   variant = "outlined",
   text,
   onClick,
-}: Props) => {
-  const VARIANT_STYLES = {
-    filled: styles.filled,
-    outlined: styles.outlined,
-    text: styles.text,
-  };
-  const givenVariant = VARIANT_STYLES[variant];
-  const variantStyle = givenVariant ? givenVariant : VARIANT_STYLES.outlined;
-
-  return (
-    <input
-      className={classNames(styles.button, extraClassnames, variantStyle)}
-      type="button"
-      value={text}
-      onClick={onClick}
-    />
-  );
-};
+}: Props) => (
+  <input
+    className={classNames(
+      styles.button,
+      extraClassnames,
+      VARIANT_STYLES[variant]
+    )}
+    type="button"
+    value={text}
+    onClick={onClick}
+  />
+);
 
 export default Button;

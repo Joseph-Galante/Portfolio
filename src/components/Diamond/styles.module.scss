@@ -1,0 +1,7 @@
+@import "../../theme.module.scss";
+
+.diamond {
+  background-color: $color-neutral-100;
+
+  transform: rotate(45deg);
+}

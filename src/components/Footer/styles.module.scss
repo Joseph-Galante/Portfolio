@@ -74,13 +74,3 @@
     }
   }
 }
-
-$divider-size: 5px;
-.divider {
-  width: $divider-size;
-  height: $divider-size;
-
-  background-color: $color-neutral-100;
-
-  transform: rotate(45deg);
-}

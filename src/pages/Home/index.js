@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { Redirect } from "react-router-dom";
-import classNames from "classnames";
 import Button from "../../components/Button";
 import Page from "../../components/Page";
+import Highlighter from "../../components/Highlighter";
 import styles from "./styles.module.scss";
 
 const Home = () => {
   const [redirect, setRedirect] = useState("");
-  const keyWords = ["self-motivated", "perfectionist", "stunning"];
 
   return (
     <Page extraClassnames={styles.home}>
@@ -21,26 +20,16 @@ const Home = () => {
           <h2>turned</h2>
           <h2>Software Developer</h2>
         </span>
-        <span className={styles.summary}>
-          {"A highly self-motivated and naturally curious perfectionist with a passion for creating stunning UX/UI"
-            .split(" ")
-            .map((str, i) => (
-              <p
-                key={str.concat(i)}
-                className={classNames({
-                  [styles.highlighted]: keyWords.includes(str),
-                })}
-              >
-                {str}
-              </p>
-            ))}
-        </span>
+        <Highlighter
+          extraClassnames={styles.summary}
+          text="A highly self-motivated and naturally curious perfectionist with a passion for creating stunning UX/UI"
+          keyWords={["self-motivated", "perfectionist", "stunning"]}
+        />
         <Button
           text="Read More About Me"
           onClick={() => {
             setRedirect("/about");
           }}
-          variant="purple"
         />
       </section>
     </Page>

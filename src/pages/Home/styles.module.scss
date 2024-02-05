@@ -65,21 +65,10 @@
 }
 
 .summary {
-  column-gap: $spacing-xxxs;
-
   margin-top: $spacing-m;
   margin-bottom: $spacing-xl;
 
-  word-wrap: normal;
   @include typography-a2;
-
-  > p {
-    margin: 0;
-
-    &.highlighted {
-      color: $color-tertiary-blue;
-    }
-  }
 }
 
 .pic {

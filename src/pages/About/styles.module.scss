@@ -2,4 +2,22 @@
 
 .scene {
   color: $color-secondary-yellow-medium;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $color-secondary-yellow-medium;
+  }
+}
+
+.description {
+  @include typography-p1;
+}
+
+.bullet {
+  background-color: $color-secondary-yellow-medium;
+}
+
+.bulletPoint {
+  @include typography-p2;
 }

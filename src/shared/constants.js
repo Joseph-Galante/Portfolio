@@ -3,6 +3,7 @@ export const RESUME_URL =
 export const GITHUB_URL = "https://github.com/Joseph-Galante";
 export const LINKEDIN_URL =
   "https://www.linkedin.com/in/joseph-galante-950426195/";
+export const SCENE_URL = "https://www.scene.health/";
 
 export const FLEX_HORIZONTAL_LIST = {
   display: "flex",

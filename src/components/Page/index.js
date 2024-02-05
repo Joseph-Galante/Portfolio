@@ -21,7 +21,6 @@ const Page = ({
   <Box
     className={classNames(styles.page, extraClassnames)}
     display="flex"
-    flexWrap="wrap"
     flexDirection="column"
     justifyContent="flex-start"
     alignItems="flex-start"
