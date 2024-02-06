@@ -18,3 +18,30 @@ export const FLEX_VERTICAL_LIST = {
   justifyContent: "flex-start",
   alignItems: "flex-start",
 };
+
+export const HARD_SKILLS = [
+  "JavaScript",
+  "HTML",
+  "CSS",
+  "React",
+  "Node",
+  "PostgreSQL",
+  "Git",
+  "Bitbucket",
+  "AWS",
+  "GCP",
+  "C#",
+  "Python",
+  "Figma",
+];
+
+export const SOFT_SKILLS = [
+  "Customer Service",
+  "Positive Attitude",
+  "Self-Motivated",
+  "Quick Learner",
+  "Communicator",
+  "Adaptive",
+  "Perfectionist",
+  "Public Speaking",
+];

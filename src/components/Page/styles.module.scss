@@ -9,8 +9,13 @@
 }
 
 .heading {
-  padding-bottom: calc($spacing-m - 2px);
+  height: 42px;
+  padding-bottom: 22px;
   margin-bottom: $spacing-l;
 
   border-bottom: 2px solid $color-secondary-yellow-medium;
+
+  h1 {
+    @include typography-c1;
+  }
 }

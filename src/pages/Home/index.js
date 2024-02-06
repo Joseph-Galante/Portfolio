@@ -24,6 +24,7 @@ const Home = () => {
           extraClassnames={styles.summary}
           text="A highly self-motivated and naturally curious perfectionist with a passion for creating stunning UX/UI"
           keyWords={["self-motivated", "perfectionist", "stunning"]}
+          variant="h4"
         />
         <Button
           text="Read More About Me"

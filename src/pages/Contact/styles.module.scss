@@ -2,25 +2,15 @@
 
 .info {
   color: $color-secondary-green-light;
-  text-align: start;
 }
 
-.links {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  row-gap: $spacing-s;
+.link {
+  width: auto;
+  max-width: fit-content;
 
-  margin-top: $spacing-l;
+  color: $color-secondary-yellow-medium;
 
-  & a {
-    width: auto;
-    max-width: fit-content;
-
-    color: $color-secondary-yellow-medium;
-
-    &:hover {
-      color: $color-tertiary-blue;
-    }
+  &:hover {
+    color: $color-tertiary-blue;
   }
 }

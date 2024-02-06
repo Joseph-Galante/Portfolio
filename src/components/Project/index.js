@@ -1,10 +1,18 @@
 import React from "react";
-
+import Box from "@mui/material/Box";
+import SkillSet from "../SkillSet";
 import styles from "./styles.module.scss";
+import {
+  FLEX_HORIZONTAL_LIST,
+  FLEX_VERTICAL_LIST,
+} from "../../shared/constants";
+import Highlighter from "../Highlighter";
+import classNames from "classnames";
 
 type Props = {
   title: string,
-  description: string,
+  currentStatus?: string,
+  description: { text: string, keyWords: string[] },
   skillSet: string[],
   thumbnail: string,
   gitUrl: string,
@@ -13,74 +21,62 @@ type Props = {
 
 const Project = ({
   title,
-  description,
+  description: { text, keyWords },
+  currentStatus,
   skillSet,
   thumbnail,
   gitUrl,
   appUrl,
 }: Props) => (
-  <div className={styles.project}>
-    <section className={styles.projectDetails}>
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <ul>
-        {skillSet.map((skill) => (
-          <li>{skill}</li>
-        ))}
-      </ul>
-    </section>
-    <section className={styles.thumbnail}>
-      <img src={thumbnail} alt="404" width={300} height={150} />
-      <span className={styles.thumbnailOptions}>
-        <a
-          className={styles.toGit}
-          href={gitUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+  <Box
+    {...FLEX_HORIZONTAL_LIST}
+    justifyContent="space-between"
+    rowGap={3}
+    width="100%"
+  >
+    <Box {...FLEX_VERTICAL_LIST} gap={3} width="60%">
+      <Box {...FLEX_VERTICAL_LIST} rowGap={1} width="100%">
+        <Box
+          {...FLEX_HORIZONTAL_LIST}
+          justifyContent="space-between"
+          gap={2}
+          width="100%"
         >
-          <img
-            className={styles.toGitDark}
-            src="https://i.imgur.com/J73iQKo.png"
-            alt="404"
-            width={50}
-            height={50}
-          />
-          <img
-            className={styles.toGitLight}
-            src="https://i.imgur.com/7ihJ5Q7.png"
-            alt="404"
-            width={50}
-            height={50}
-          />
-          <p className={styles.toGitTooltip}>View Repo</p>
-        </a>
-        {appUrl && (
-          <a
-            className={styles.toApp}
-            href={appUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className={styles.toAppDark}
-              src="https://i.imgur.com/JDWntEK.png"
-              alt="404"
-              width={50}
-              height={50}
-            />
-            <img
-              className={styles.toAppLight}
-              src="https://i.imgur.com/a4O1kq4.png"
-              alt="404"
-              width={50}
-              height={50}
-            />
-            <p className={styles.toAppTooltip}>Launch App</p>
-          </a>
+          <h2>{title}</h2>
+          <Box {...FLEX_HORIZONTAL_LIST} gap={2}>
+            <a
+              className={classNames(styles.link, {
+                [styles.disabledLink]: !gitUrl,
+              })}
+              href={gitUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Repo
+            </a>
+            <a
+              className={classNames(styles.link, {
+                [styles.disabledLink]: !appUrl,
+              })}
+              href={appUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Launch App
+            </a>
+          </Box>
+        </Box>
+        {currentStatus && (
+          <h4 className={styles.currentStatus}>{currentStatus}</h4>
         )}
-      </span>
-    </section>
-  </div>
+      </Box>
+      <Highlighter text={text} keyWords={keyWords} />
+      <SkillSet skills={skillSet} mt={0} />
+    </Box>
+    {thumbnail && (
+      <img src={thumbnail} alt="No screenshot available" height={192} />
+    )}
+  </Box>
 );
 
 export default Project;

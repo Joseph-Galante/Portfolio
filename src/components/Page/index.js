@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import Box from "@mui/material/Box";
 import classNames from "classnames";
+import { FLEX_VERTICAL_LIST } from "../../shared/constants";
 import styles from "./styles.module.scss";
 
 type Props = {
@@ -20,10 +21,8 @@ const Page = ({
 }: Props) => (
   <Box
     className={classNames(styles.page, extraClassnames)}
-    display="flex"
-    flexDirection="column"
-    justifyContent="flex-start"
-    alignItems="flex-start"
+    {...FLEX_VERTICAL_LIST}
+    mb="40px"
   >
     {showHeading && heading && (
       <Box

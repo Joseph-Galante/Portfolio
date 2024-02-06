@@ -1,30 +1,3 @@
-export const HARD_SKILLS = [
-  "JavaScript",
-  "HTML",
-  "CSS",
-  "React",
-  "Node",
-  "PostgreSQL",
-  "Git",
-  "Bitbucket",
-  "AWS",
-  "GCP",
-  "C#",
-  "Python",
-  "Figma",
-];
-
-export const SOFT_SKILLS = [
-  "Customer Service",
-  "Positive Attitude",
-  "Self-Motivated",
-  "Quick Learner",
-  "Communicator",
-  "Adaptive",
-  "Perfectionist",
-  "Public Speaking",
-];
-
 export const SCENE_BULLETS = [
   {
     text: "Played a pivotal role in critical decision-making for designing and implementing both frontend and backend systems",
@@ -98,4 +71,4 @@ export const SCENE_SKILLS = [
   "Bitbucket",
   "AWS",
   "Figma",
-].sort();
+];

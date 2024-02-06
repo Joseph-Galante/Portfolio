@@ -6,22 +6,19 @@ import Button from "../../components/Button";
 import Chip from "../../components/Chip";
 import Diamond from "../../components/Diamond";
 import Highlighter from "../../components/Highlighter";
-import {
-  HARD_SKILLS,
-  SCENE_BULLETS,
-  SCENE_SKILLS,
-  SOFT_SKILLS,
-} from "./constants";
+import SkillSet from "../../components/SkillSet";
+import { SCENE_BULLETS, SCENE_SKILLS } from "./constants";
 import {
   FLEX_HORIZONTAL_LIST,
   FLEX_VERTICAL_LIST,
+  HARD_SKILLS,
+  SOFT_SKILLS,
   SCENE_URL,
 } from "../../shared/constants";
 import styles from "./styles.module.scss";
 
 const About = () => {
   const [redirect, setRedirect] = useState("");
-  const skills = [...HARD_SKILLS, ...SOFT_SKILLS].sort();
 
   return (
     <Page
@@ -42,7 +39,7 @@ const About = () => {
         justifyContent="space-between"
         width="100%"
       >
-        <Box width="35%" height="100%">
+        <Box maxWidth="35%" height="100%">
           <Box {...FLEX_VERTICAL_LIST} gap="10px">
             <h2>Skills</h2>
             <Box {...FLEX_HORIZONTAL_LIST} gap={1}>
@@ -51,23 +48,15 @@ const About = () => {
             </Box>
           </Box>
 
-          <Box {...FLEX_HORIZONTAL_LIST} columnGap={1} rowGap={1.5} mt={5}>
-            {skills.map((skill) => (
-              <Chip
-                key={`base-list-${skill}`}
-                label={skill}
-                color={HARD_SKILLS.includes(skill) ? "secondary" : "tertiary"}
-              />
-            ))}
-          </Box>
+          <SkillSet skills={[...HARD_SKILLS, ...SOFT_SKILLS]} mt={5} />
         </Box>
 
-        <Box width="55%" height="100%">
+        <Box maxWidth="55%" height="100%">
           <Box {...FLEX_VERTICAL_LIST} gap="10px">
             <h2>Experience</h2>
           </Box>
 
-          <Box {...FLEX_VERTICAL_LIST} columnGap={1} rowGap={1.5} mt={9}>
+          <Box {...FLEX_VERTICAL_LIST} columnGap={1} rowGap={1.5} mt={8}>
             <a
               className={styles.scene}
               href={SCENE_URL}
@@ -110,17 +99,7 @@ const About = () => {
                   </Box>
                 ))}
               </Box>
-              <Box {...FLEX_HORIZONTAL_LIST} columnGap={1} rowGap={1.5} mt={3}>
-                {SCENE_SKILLS.map((skill) => (
-                  <Chip
-                    key={`scene-list-${skill}`}
-                    label={skill}
-                    color={
-                      HARD_SKILLS.includes(skill) ? "secondary" : "tertiary"
-                    }
-                  />
-                ))}
-              </Box>
+              <SkillSet skills={SCENE_SKILLS} />
             </Box>
           </Box>
         </Box>
