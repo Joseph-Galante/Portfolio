@@ -26,7 +26,7 @@ const Projects = () => {
 
       <Box {...FLEX_VERTICAL_LIST} rowGap={14}>
         {PROJECTS.map((project) => (
-          <Project {...project} />
+          <Project key={`${project.title}-project`} {...project} />
         ))}
       </Box>
     </Page>
