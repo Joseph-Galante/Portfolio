@@ -1,5 +1,9 @@
 @import "../../theme.module.scss";
 
+.title {
+  color: $color-secondary-yellow-medium;
+}
+
 .currentStatus {
   color: $color-neutral-400;
 }
@@ -8,10 +12,10 @@
   width: auto;
   max-width: fit-content;
 
-  color: $color-secondary-yellow-medium;
+  color: $color-secondary-green-medium;
 
   &:hover {
-    color: $color-secondary-green-medium;
+    color: $color-secondary-yellow-medium;
   }
 
   &.disabledLink {

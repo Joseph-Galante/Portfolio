@@ -36,7 +36,7 @@ const Page = ({
         {controls}
       </Box>
     )}
-    {children}
+    <Box className={styles.content}>{children}</Box>
   </Box>
 );
 

@@ -5,23 +5,10 @@
 }
 
 .details {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-  text-align: start;
-
   & h1 {
     margin: auto 0;
 
     @include typography-h1;
-  }
-
-  > span {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
   }
 }
 
@@ -44,16 +31,7 @@
 }
 
 .journey {
-  column-gap: $spacing-xxs;
-
-  margin-top: $spacing-s;
-
   > h2 {
-    margin: 0;
-
-    @include typography-h2;
-    font-size: 24px;
-
     &:nth-child(1) {
       color: $color-secondary-yellow-medium;
     }

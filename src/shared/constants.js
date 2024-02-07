@@ -33,6 +33,9 @@ export const HARD_SKILLS = [
   "C#",
   "Python",
   "Figma",
+  "TypeScript",
+  "Apollo",
+  "GraphQL",
 ];
 
 export const SOFT_SKILLS = [
@@ -40,8 +43,9 @@ export const SOFT_SKILLS = [
   "Positive Attitude",
   "Self-Motivated",
   "Quick Learner",
-  "Communicator",
-  "Adaptive",
+  "Communication",
+  "Adaptation",
   "Perfectionist",
   "Public Speaking",
+  "Collaboration",
 ];

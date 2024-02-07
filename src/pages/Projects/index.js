@@ -24,7 +24,7 @@ const Projects = () => {
     >
       {redirect !== "" ? <Redirect to={redirect} /> : null}
 
-      <Box {...FLEX_VERTICAL_LIST} rowGap={12}>
+      <Box {...FLEX_VERTICAL_LIST} rowGap={14}>
         {PROJECTS.map((project) => (
           <Project {...project} />
         ))}

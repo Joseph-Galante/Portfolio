@@ -34,7 +34,7 @@ const Project = ({
     rowGap={3}
     width="100%"
   >
-    <Box {...FLEX_VERTICAL_LIST} gap={3} width="60%">
+    <Box {...FLEX_VERTICAL_LIST} gap={3} minWidth="60%" maxWidth="75%">
       <Box {...FLEX_VERTICAL_LIST} rowGap={1} width="100%">
         <Box
           {...FLEX_HORIZONTAL_LIST}
@@ -42,7 +42,7 @@ const Project = ({
           gap={2}
           width="100%"
         >
-          <h2>{title}</h2>
+          <h2 className={styles.title}>{title}</h2>
           <Box {...FLEX_HORIZONTAL_LIST} gap={2}>
             <a
               className={classNames(styles.link, {
