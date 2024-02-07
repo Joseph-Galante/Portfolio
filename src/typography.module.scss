@@ -5,6 +5,11 @@
   letter-spacing: normal;
   text-transform: capitalize;
   text-decoration: none;
+
+  @media only screen and (max-width: $breakpoint-xs) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 @mixin typography-a2 {
@@ -14,6 +19,11 @@
   letter-spacing: normal;
   text-transform: capitalize;
   text-decoration: none;
+
+  @media only screen and (max-width: $breakpoint-xs) {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 @mixin typography-a3 {
@@ -23,6 +33,10 @@
   letter-spacing: normal;
   text-transform: capitalize;
   text-decoration: none;
+
+  @media only screen and (max-width: $breakpoint-xs) {
+    font-size: 14px;
+  }
 }
 
 @mixin typography-h1 {
@@ -32,15 +46,25 @@
   letter-spacing: normal;
   text-transform: capitalize;
   text-decoration: none;
+
+  @media only screen and (max-width: $breakpoint-xs) {
+    font-size: 76px;
+    line-height: 64px;
+  }
 }
 
 @mixin typography-h2 {
   font-size: 24px;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 24px;
   letter-spacing: normal;
   text-transform: capitalize;
   text-decoration: none;
+
+  @media only screen and (max-width: $breakpoint-xs) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 @mixin typography-h4 {
@@ -50,6 +74,11 @@
   letter-spacing: normal;
   text-transform: capitalize;
   text-decoration: none;
+
+  @media only screen and (max-width: $breakpoint-xs) {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 @mixin typography-p1 {
@@ -58,6 +87,11 @@
   line-height: 20px;
   letter-spacing: normal;
   text-transform: none;
+
+  @media only screen and (max-width: $breakpoint-xs) {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 @mixin typography-p2 {
@@ -66,20 +100,35 @@
   line-height: 20px;
   letter-spacing: normal;
   text-transform: none;
+
+  @media only screen and (max-width: $breakpoint-xs) {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 @mixin typography-c1 {
   font-size: 32px;
   font-weight: 800;
-  line-height: 20px;
+  line-height: 32px;
   letter-spacing: normal;
   text-transform: uppercase;
+
+  @media only screen and (max-width: $breakpoint-xs) {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 @mixin typography-c2 {
   font-size: 24px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 24px;
   letter-spacing: normal;
   text-transform: uppercase;
+
+  @media only screen and (max-width: $breakpoint-xs) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

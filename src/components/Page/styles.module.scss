@@ -10,6 +10,7 @@
 
 .heading {
   height: 42px;
+  min-height: 42px;
   padding-bottom: 22px;
   margin-bottom: $spacing-l;
 
@@ -18,8 +19,17 @@
   h1 {
     @include typography-c1;
   }
+
+  @media only screen and (max-width: $breakpoint-s) {
+    height: 36px;
+    min-height: 36px;
+  }
 }
 
 .content {
-  margin-bottom: $spacing-xl;
+  margin-bottom: $height-footer;
+
+  @media only screen and (max-width: $breakpoint-s) {
+    margin-bottom: $width-nav-bar;
+  }
 }

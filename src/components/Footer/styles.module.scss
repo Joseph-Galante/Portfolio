@@ -10,8 +10,8 @@
   align-items: center;
 
   width: 100%;
-  min-height: 50px;
-  height: 50px;
+  min-height: $height-footer;
+  height: $height-footer;
 
   z-index: 10;
   background-color: $color-primary-dark;
@@ -29,6 +29,10 @@
       color: $color-primary-dark;
       text-decoration: underline;
     }
+  }
+
+  @media only screen and (max-width: $breakpoint-s) {
+    display: none;
   }
 }
 

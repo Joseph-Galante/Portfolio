@@ -4,14 +4,6 @@
   justify-content: center !important;
 }
 
-.details {
-  & h1 {
-    margin: auto 0;
-
-    @include typography-h1;
-  }
-}
-
 .name {
   color: $color-primary-dark;
 }
@@ -21,9 +13,12 @@
 
   color: $color-secondary-green-medium;
 
-  @include typography-h2;
   text-transform: none;
   font-style: italic;
+
+  @media only screen and (max-width: $breakpoint-xs) {
+    margin-bottom: $spacing-s;
+  }
 }
 
 .introduction {
@@ -47,10 +42,9 @@
   margin-bottom: $spacing-xl;
 
   @include typography-a2;
-}
 
-.pic {
-  & img {
-    border-radius: 50%;
+  @media only screen and (max-width: $breakpoint-xs) {
+    font-size: 14px;
+    line-height: 16px;
   }
 }

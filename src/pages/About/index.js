@@ -41,7 +41,7 @@ const About = () => {
         width="100%"
         gap={8}
       >
-        <Box {...FLEX_VERTICAL_LIST} minWidth="300px" maxWidth="35%">
+        <Box {...FLEX_VERTICAL_LIST} minWidth="300px" maxWidth="100%">
           <Box
             {...FLEX_HORIZONTAL_LIST}
             justifyContent="space-between"
@@ -58,7 +58,7 @@ const About = () => {
           <SkillSet skills={[...HARD_SKILLS, ...SOFT_SKILLS]} mt={5} />
         </Box>
 
-        <Box minWidth="300px" maxWidth="55%" height="100%">
+        <Box minWidth="300px" maxWidth="100%" height="100%">
           <Box {...FLEX_VERTICAL_LIST} gap="10px">
             <h2>Experience</h2>
           </Box>

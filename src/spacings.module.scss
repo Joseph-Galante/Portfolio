@@ -6,6 +6,12 @@ $spacing-m: 24px;
 $spacing-l: 32px;
 $spacing-xl: 40px;
 
+$breakpoint-xs: 500px;
+$breakpoint-s: 700px;
+
+$width-nav-bar: 92px;
+$height-footer: 50px;
+
 @mixin padding-s-m {
   padding: $spacing-s $spacing-m;
 }

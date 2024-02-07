@@ -1,25 +1,14 @@
 @import "../../theme.module.scss";
 
-.app {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  width: 100%;
-  height: 100vh;
-}
-
-.layout {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-  width: 100%;
-  height: 100%;
-}
-
 .content {
-  width: calc(100% - 92px);
-  height: 100%;
-  margin-left: 92px;
+  width: calc(100% - $width-nav-bar);
+  height: calc(100vh - $height-footer);
+  margin-left: $width-nav-bar;
+
+  @media only screen and (max-width: $breakpoint-s) {
+    width: 100%;
+    height: calc(100vh - $width-nav-bar);
+    margin-left: 0;
+    margin-bottom: $width-nav-bar;
+  }
 }

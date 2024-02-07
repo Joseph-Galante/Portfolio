@@ -1,10 +1,10 @@
 @import "../../theme.module.scss";
 
 $color-background: $color-neutral-black;
-$width-nav-bar: 92px;
 
 .navBar {
   position: fixed;
+  z-index: 10;
 
   display: flex;
   flex-direction: column;
@@ -12,10 +12,21 @@ $width-nav-bar: 92px;
   row-gap: $spacing-s;
 
   width: $width-nav-bar;
-  height: 100%;
-  padding-top: $spacing-xs;
+  height: calc(100vh - $height-footer);
+  padding-top: $spacing-m;
 
   background-color: $color-background;
+
+  @media only screen and (max-width: $breakpoint-s) {
+    bottom: 0;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: $width-nav-bar;
+    padding-top: 0;
+  }
 }
 
 $color-inactive: $color-neutral-white;

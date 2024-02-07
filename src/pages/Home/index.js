@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <Page extraClassnames={styles.home}>
       {redirect !== "" ? <Redirect to={redirect} /> : null}
-      <Box className={styles.details} {...FLEX_VERTICAL_LIST} textAlign="start">
+      <Box {...FLEX_VERTICAL_LIST} textAlign="start">
         <h2 className={styles.greeting}>{"> start greeting.exe"}</h2>
         <h1 className={styles.introduction}>Hello! I'm</h1>
         <h1 className={styles.name}>Joe Galante</h1>
@@ -32,8 +32,8 @@ const Home = () => {
         </Box>
         <Highlighter
           extraClassnames={styles.summary}
-          text="A highly self-motivated and naturally curious perfectionist with a passion for creating stunning UX/UI"
-          keyWords={["self-motivated", "perfectionist", "stunning"]}
+          text="A highly self-motivated and naturally curious perfectionist with a passion for offering creative solutions for UX/UI"
+          keyWords={["self-motivated", "perfectionist", "creative"]}
           variant="h4"
         />
         <Button

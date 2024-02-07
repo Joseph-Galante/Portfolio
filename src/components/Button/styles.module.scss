@@ -9,6 +9,10 @@
   &:hover {
     cursor: pointer;
   }
+
+  @media only screen and (max-width: $breakpoint-xs) {
+    padding: $spacing-xxxs $spacing-xs;
+  }
 }
 
 $color-button-filled-idle: $color-primary-medium;

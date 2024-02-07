@@ -34,37 +34,30 @@ const Project = ({
     rowGap={3}
     width="100%"
   >
-    <Box {...FLEX_VERTICAL_LIST} gap={3} minWidth="60%" maxWidth="75%">
+    <Box {...FLEX_VERTICAL_LIST} gap={3} minWidth="60%" maxWidth="100%">
       <Box {...FLEX_VERTICAL_LIST} rowGap={1} width="100%">
-        <Box
-          {...FLEX_HORIZONTAL_LIST}
-          justifyContent="space-between"
-          gap={2}
-          width="100%"
-        >
-          <h2 className={styles.title}>{title}</h2>
-          <Box {...FLEX_HORIZONTAL_LIST} gap={2}>
-            <a
-              className={classNames(styles.link, {
-                [styles.disabledLink]: !gitUrl,
-              })}
-              href={gitUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Repo
-            </a>
-            <a
-              className={classNames(styles.link, {
-                [styles.disabledLink]: !appUrl,
-              })}
-              href={appUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Launch App
-            </a>
-          </Box>
+        <h2 className={styles.title}>{title}</h2>
+        <Box {...FLEX_HORIZONTAL_LIST} gap={2}>
+          <a
+            className={classNames(styles.link, {
+              [styles.disabledLink]: !gitUrl,
+            })}
+            href={gitUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Repo
+          </a>
+          <a
+            className={classNames(styles.link, {
+              [styles.disabledLink]: !appUrl,
+            })}
+            href={appUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Launch App
+          </a>
         </Box>
         {currentStatus && (
           <h4 className={styles.currentStatus}>{currentStatus}</h4>

@@ -22,7 +22,6 @@ const Page = ({
   <Box
     className={classNames(styles.page, extraClassnames)}
     {...FLEX_VERTICAL_LIST}
-    mb="40px"
   >
     {showHeading && heading && (
       <Box
