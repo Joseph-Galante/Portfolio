@@ -112,10 +112,10 @@ export const PROJECTS = [
     title: "Unreal RPG",
     currentStatus: "In Progress",
     description: {
-      text: "An RPG built in Unreal Engine 5 as a playground for developing and demoing core game functionality. Notable features include multiplayer trading via server-client RPCs, infinite terrain generation performed asynchronously at runtime using FRunnable worker threads, and various gameplay systems utilizing the built-in Gameplay Ability System (GAS) framework.",
+      text: "An RPG playground built in Unreal Engine 5 for developing and demoing core game functionality. Notable features include multiplayer trading via server-client RPCs, infinite terrain generation performed asynchronously at runtime using FRunnable worker threads, and various gameplay systems utilizing the Gameplay Ability System (GAS) framework.",
       keyWords: [
-        "RPG",
         "playground",
+        "developing",
         "core",
         "functionality",
         "multiplayer",
