@@ -17,7 +17,7 @@ const Home = () => {
     <Page extraClassnames={styles.home}>
       {redirect !== "" ? <Redirect to={redirect} /> : null}
       <Box {...FLEX_VERTICAL_LIST} textAlign="start">
-        <h2 className={styles.greeting}>{"> start greeting.exe"}</h2>
+        {/* <h4 className={styles.greeting}>{"> start greeting.exe"}</h4> */}
         <h1 className={styles.introduction}>Hello! I'm</h1>
         <h1 className={styles.name}>Joe Galante</h1>
         <Box

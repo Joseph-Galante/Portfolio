@@ -36,6 +36,9 @@ export const HARD_SKILLS = [
   "TypeScript",
   "Apollo",
   "GraphQL",
+  "C++",
+  "Unreal 5",
+  "Blender",
 ];
 
 export const SOFT_SKILLS = [

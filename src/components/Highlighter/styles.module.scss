@@ -5,8 +5,6 @@
   @include typography-a2;
 
   > span {
-    margin: 0;
-
     &.highlighted {
       color: $color-tertiary-blue;
     }

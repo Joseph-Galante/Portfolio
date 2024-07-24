@@ -26,14 +26,16 @@ const Highlighter = ({
     <Box
       className={classNames(styles.highlighter, variantStyle, extraClassnames)}
       {...FLEX_HORIZONTAL_LIST}
-      columnGap={variantGap}
     >
-      {text.split(" ").map((str, i) => (
+      {text.split(/(?=[.,() ])|(?<=[.,() ])/).map((str, i) => (
         <span
           key={str.concat(i)}
           className={classNames({
             [styles.highlighted]: !disabled && keyWords.includes(str),
           })}
+          style={{
+            marginRight: str === " " ? variantGap : 0,
+          }}
         >
           {str}
         </span>
